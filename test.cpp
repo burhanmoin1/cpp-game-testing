@@ -9,6 +9,12 @@ void say_hello() {
     cout << "Hello" << endl;
 }
 
+void counter() {
+    static int count = 0;  // Static variable
+    count++;  // Increment value
+    std::cout << "Count: " << count << std::endl;
+}
+
 int main() {
 //     // Create a 2D vector (3x3 grid)
 //     vector<vector<int>> matrix = {
@@ -49,9 +55,16 @@ int main() {
 // //             char new_char {key.at(position)};
 // //         }
 
-say_hello();
-    
-return 0;
+// int *p;
+// cout << "value of p is:" << p << endl;
+// cout << "Address of p is:" << &p << endl;
+
+
+    std::ostream& out = std::cout; // std::cout is an instance of std::ostream
+    out << "Hello, World!" << endl;  // Using the << operator
+
+
+
 }
 
 
